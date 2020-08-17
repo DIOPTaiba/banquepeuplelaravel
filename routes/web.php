@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/medecin/add', 'MedecinController@add')->name('addmedecin');
+Route::get('/medecin/getAll', 'MedecinController@getAll')->name('getallmedecin');
+
+Route::get('/rendezvous/add', 'RendezvousController@add')->name('addrendezvous');
+Route::get('/rendezvous/getAll', 'RendezvousController@getAll')->name('getallrendezvous');
