@@ -1,0 +1,308 @@
+body {
+    background-color: #504DC1;
+}
+
+h1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: #504DC1;
+    text-align: center;
+    width: 900px;
+    height: 50px;
+    padding: initial;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 5%;
+}
+
+h2 {
+    color: #504DC1;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 2%;
+    font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+.choix_profil,
+.accueil_responsable {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#page_authentification {
+    /*border-color: #504DC1 solid 1px;*/
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    /*border-style: solid;*/
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    margin-bottom: 15px;
+    color: #504DC1;
+    /*text-align: center;*/
+}
+
+#formulaire_admin fieldset,
+#formulaire_responsable fieldset,
+#formulaire_caissiere fieldset {
+    border-color: #504DC1;
+    border-radius: 10px;
+    border: solid 2px;
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+    margin-bottom: 15px;
+}
+
+#page_authentification,
+#formulaire_admin,
+#formulaire_responsable,
+#formulaire_caissiere {
+    display: none;
+}
+
+.choix_profil button {
+    border-color: #504DC1;
+    border-radius: 10px;
+    border-style: solid;
+    height: 55px;
+    width: 30%;
+    padding: auto;
+    margin: auto;
+    margin-right: 15px;
+    transition: 0.2s;
+    /*permet de définir la vitesse de la transistion*/
+    text-decoration: none;
+    color: #504DC1;
+    font: 20px bold;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+}
+
+.choix_profil button:hover {
+    box-shadow: 4px 4px #FFD007;
+    transform: translate(3px, 3px);
+    /*transistion (déplacement) de l'élément au survol souris*/
+}
+
+fieldset {
+    border: #504DC1 solid 2px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 17%;
+    padding-right: 17%;
+    margin-bottom: 2%;
+}
+
+.accueil_responsable a {
+    border-color: #504DC1;
+    border-radius: 10px;
+    border-style: solid;
+    height: 55px;
+    width: 30%;
+    margin: auto;
+    margin-right: 15px;
+    padding-top: 25px;
+    /*permet de définir la vitesse de la transistion*/
+    transition: 0.2s;
+    text-decoration: none;
+    color: #504DC1;
+    font: 20px bold;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+.accueil_responsable a:hover {
+    box-shadow: 4px 4px #FFD007;
+    transform: translate(3px, 3px);
+    /*transistion (déplacement) de l'élément au survol souris*/
+}
+
+legend {
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+form p {
+    text-align: center;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    margin-left: 8%;
+}
+
+em {
+    /*font-weight: bold;*/
+    font-style: normal;
+    color: #f00;
+}
+
+input {
+    border: solid #504DC1 2px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    /*margin-left: 10%;*/
+}
+
+#form_compte_non_salarie,
+#form_compte_salarie,
+#form_compte_entreprise,
+#form_insert_client_existant_non_salarie,
+#form_insert_client_existant_salarie,
+#form_insert_client_existant_moral {
+    background-color: #EFEFEF;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+#form_compte_non_salarie fieldset,
+#form_compte_salarie fieldset,
+#form_compte_entreprise fieldset,
+#form_insert_client_existant_non_salarie fieldset,
+#form_insert_client_existant_salarie fieldset,
+#form_insert_client_existant_moral fieldset {
+    width: 80%;
+}
+
+#form_compte_non_salarie input,
+#form_compte_salarie input,
+#form_compte_entreprise input,
+#form_insert_client_existant_non_salarie input,
+#form_insert_client_existant_salarie input,
+#form_insert_client_existant_moral input {
+    width: 100%;
+    margin: auto;
+    height: 25px;
+    border: solid #504DC1 2px;
+    border-radius: 5px;
+}
+
+#form_compte_non_salarie h2,
+#form_compte_salarie h2,
+#form_compte_entreprise h2,
+#form_insert_client_existant_non_salarie h2,
+#form_insert_client_existant_salarie h2,
+#form_insert_client_existant_moral h2 {
+    color: #808080;
+}
+
+
+/*on cache le formulaire pour la création de tous les comptes*/
+
+#form_compte_non_salarie,
+#form_compte_salarie,
+#form_compte_entreprise {
+    display: none;
+}
+
+select {
+    border: solid #504DC1 2px;
+    border-radius: 5px;
+}
+#validation {
+    width: 90%;
+    margin-left: 27%;
+}
+#validation input {
+    width: 25%;
+    margin: auto;
+    height: 2%;
+    font-size: medium;
+}
+
+.selection_type_compte {
+    width: 220px;
+}
+
+#duree_blocage {
+    width: 50px;
+}
+
+#type_compte {
+    width: 100%;
+    border: solid 2px #504DC1;
+}
+
+.choix_client {
+    width: 400px;
+    margin: auto;
+    background-color: #EFEFEF;
+    margin-top: 3%;
+    padding: 15px 0px 15px 0px;
+}
+
+#select_client {
+    width: 340px;
+    margin: auto;
+    text-align: center;
+}
+
+#select_client button {
+    width: 150px;
+    margin: auto;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+}
+
+#saisie_id_client {
+    width: 70%;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+}
+
+#saisie_id_client input {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    height: 28px;
+}
+
+#search {
+    background-color: white;
+    border-radius: 5px;
+    border-color: none;
+    font-weight: bold;
+    height: 28px;
+}
+
+#search:hover {
+    background-color: green;
+    color: white;
+}
+
+#saisie_id_client,
+#duree_blocage_compte,
+#frais_ouverture_compte,
+#montant_remuneration_compte,
+#agios_compte {
+    display: none;
+}
+
+button a {
+    text-decoration: none;
+}
+fieldset input
+{
+    border: solid 2px #504DC1;
+}

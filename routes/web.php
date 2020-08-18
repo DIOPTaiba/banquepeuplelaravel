@@ -19,8 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/medecin/add', 'MedecinController@add')->name('addmedecin');
-Route::get('/medecin/getAll', 'MedecinController@getAll')->name('getallmedecin');
+Route::get('/clientnonsalarie/add', 'ClientnonsalarieController@add')->name('addclientnonsalarie');
+Route::post('/clientnonsalarie/persist', 'ClientnonsalarieController@persist')->name('persistclientnonsalarie');
+Route::get('/clientnonsalarie/getAll', 'ClientnonsalarieController@getAll')->name('getallclientnonsalarie');
+Route::get('/clientnonsalarie/edit/{id}', 'ClientnonsalarieController@edit')->name('editclientnonsalarie');
+Route::post('/clientnonsalarie/update', 'ClientnonsalarieController@update')->name('updateclientnonsalarie');
 
-Route::get('/rendezvous/add', 'RendezvousController@add')->name('addrendezvous');
-Route::get('/rendezvous/getAll', 'RendezvousController@getAll')->name('getallrendezvous');
+Route::get('/clientsalarie/add', 'ClientsalarieController@add')->name('addclientsalarie');
+Route::post('/clientsalarie/persist', 'ClientsalarieController@persist')->name('persistclientsalarie');
+Route::get('/clientsalarie/getAll', 'ClientsalarieController@getAll')->name('getallclientsalarie');
